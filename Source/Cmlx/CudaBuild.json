@@ -24,7 +24,8 @@
         "mlx/examples",
         "mlx/python",
         "mlx/tests",
-        "mlx/mlx/backend/metal/kernels"
+        "mlx/mlx/backend/metal/kernels",
+        "mlx/mlx/backend/cuda/quantized/qmm"
     ],
     "cppLanguageStandard": "c++20",
     "verbose": false
