@@ -54,7 +54,8 @@ extension Encuda {
             let process = Process()
             process.executableURL = URL(fileURLWithPath: resolvedNvcc)
             process.arguments =
-                ["-cuda", "-rdc=true", "--expt-relaxed-constexpr"] + stdArgs + ccbinArgs + archArgs
+                ["-cuda", "-rdc=true", "--expt-relaxed-constexpr", "-allow-unsupported-compiler"]
+                + stdArgs + ccbinArgs + archArgs
                 + (verbose ? ["-v"] : []) + includeArgs + inputFiles + ["-o", output]
             try process.run()
             process.waitUntilExitWorkaround()
