@@ -112,6 +112,10 @@ let noCudaCmlxExcludes = [
                 "mlx/mlx/backend/cuda/quantized/qmm/qmm.cu",
                 "mlx/mlx/backend/cuda/quantized/qmm/qmm_impl_sm90_m128_n128_m2.cu",
                 "mlx/mlx/backend/cuda/quantized/qmm/fp_qmv.cu",
+
+                // Exclude real impls replaced by no-op stubs (CUTLASS not available)
+                "mlx/mlx/backend/cuda/quantized/qqmm_impl.cpp",
+                "mlx/mlx/backend/cuda/quantized/cublas_qqmm.cpp",
             ] + noMetalCmlxExcludes
 
         cxxSettings = [

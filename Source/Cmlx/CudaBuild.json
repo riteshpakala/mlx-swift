@@ -25,7 +25,10 @@
         "mlx/python",
         "mlx/tests",
         "mlx/mlx/backend/metal/kernels",
-        "mlx/mlx/backend/cuda/quantized/qmm"
+        "mlx/mlx/backend/cuda/quantized/qmm",
+        "mlx/mlx/backend/cuda/quantized/fp_quantize.cu",
+        "mlx/mlx/backend/cuda/quantized/qqmm_utils.cu",
+        "mlx/mlx/backend/cuda/gemms/grouped_gemm_unaligned.cu"
     ],
     "cppLanguageStandard": "c++20",
     "verbose": false
