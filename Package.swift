@@ -117,9 +117,8 @@ let noCudaCmlxExcludes = [
         cxxSettings = [
             .unsafeFlags(["-I/usr/local/cuda/include"]),
             .unsafeFlags(["-I/usr/local/cuda/include/cccl"]),
-            .unsafeFlags(["-I/home/totem/.local/cudnn-frontend/include"]),
+            .unsafeFlags(["-I/usr/local/cudnn-frontend/include"]),
             .unsafeFlags(["-DCUDNN_FRONTEND_SKIP_JSON_LIB"]),
-            .unsafeFlags(["-isystem", "/home/totem/.local/include"]),
         ]
 
         linkerSettings = [
